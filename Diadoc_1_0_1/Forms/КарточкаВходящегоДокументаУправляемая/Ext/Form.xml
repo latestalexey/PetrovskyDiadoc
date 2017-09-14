@@ -170,13 +170,25 @@
 					<ContextMenu name="ДокументВ1СКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="ДокументВ1СРасширеннаяПодсказка" id="68"/>
 				</InputField>
+				<Button name="ОтправитьВОбработку" id="93">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтправитьВОбработку</CommandName>
+					<ExtendedTooltip name="ОтправитьВОбработкуРасширеннаяПодсказка" id="94"/>
+				</Button>
+				<Button name="Игнорировать" id="95">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Игнорировать</CommandName>
+					<ExtendedTooltip name="ИгнорироватьРасширеннаяПодсказка" id="96"/>
+				</Button>
 				<Button name="СоздатьДокумент" id="25">
 					<Type>UsualButton</Type>
+					<Visible>false</Visible>
 					<CommandName>Form.Command.СоздатьДокумент</CommandName>
 					<ExtendedTooltip name="СоздатьДокументРасширеннаяПодсказка" id="69"/>
 				</Button>
 				<Button name="СопоставитьДокумент" id="44">
 					<Type>UsualButton</Type>
+					<Visible>false</Visible>
 					<CommandName>Form.Command.СопоставитьДокумент</CommandName>
 					<ExtendedTooltip name="СопоставитьДокументРасширеннаяПодсказка" id="70"/>
 				</Button>
@@ -601,6 +613,15 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="параметрыНачалаОбработки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры начала обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОтправитьОтвет" id="1">
@@ -662,6 +683,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СохранитьОтвет</Action>
+		</Command>
+		<Command name="ОтправитьВОбработку" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в обработку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в обработку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьВОбработку</Action>
+		</Command>
+		<Command name="Игнорировать" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнорировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнорировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Игнорировать</Action>
 		</Command>
 	</Commands>
 	<Parameters>
