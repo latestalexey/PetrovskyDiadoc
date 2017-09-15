@@ -170,25 +170,13 @@
 					<ContextMenu name="ДокументВ1СКонтекстноеМеню" id="22"/>
 					<ExtendedTooltip name="ДокументВ1СРасширеннаяПодсказка" id="68"/>
 				</InputField>
-				<Button name="ОтправитьВОбработку" id="93">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ОтправитьВОбработку</CommandName>
-					<ExtendedTooltip name="ОтправитьВОбработкуРасширеннаяПодсказка" id="94"/>
-				</Button>
-				<Button name="Игнорировать" id="95">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.Игнорировать</CommandName>
-					<ExtendedTooltip name="ИгнорироватьРасширеннаяПодсказка" id="96"/>
-				</Button>
 				<Button name="СоздатьДокумент" id="25">
 					<Type>UsualButton</Type>
-					<Visible>false</Visible>
 					<CommandName>Form.Command.СоздатьДокумент</CommandName>
 					<ExtendedTooltip name="СоздатьДокументРасширеннаяПодсказка" id="69"/>
 				</Button>
 				<Button name="СопоставитьДокумент" id="44">
 					<Type>UsualButton</Type>
-					<Visible>false</Visible>
 					<CommandName>Form.Command.СопоставитьДокумент</CommandName>
 					<ExtendedTooltip name="СопоставитьДокументРасширеннаяПодсказка" id="70"/>
 				</Button>
